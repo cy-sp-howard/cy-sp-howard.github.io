@@ -1,0 +1,1 @@
+import{j as e,q as o,l as t,_ as n}from"./index-ce2f2e21.js";const s={id:"not-found"},c=t("h1",null,"NOT FOUND",-1),_=[c];function r(d,i){return o(),e("div",s,_)}const a={},f=n(a,[["render",r]]);export{f as default};
