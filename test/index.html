@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no"
+    />
+    <script
+      src="https://unpkg.com/html5-qrcode"
+      type="text/javascript"
+    ></script>
+    <title>TEST</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, shrink-to-fit=no">
-  <script src="https://unpkg.com/html5-qrcode" type="text/javascript">
+    <style>
+      #main {
+        margin: 20px auto;
+        display: grid;
+        height: 500px;
+        width: 500px;
+      }
+    </style>
+  </head>
 
-
-  <!-- 引入组件库 -->
-  <title>TEST</title>
-</head>
-
-<body>
- <div id="main" width="600px">
-     <div id="reader" />
+  <body>
+    <div id="main" width="600px">
+      <div id="reader" />
     </div>
 
-
-<script>
-    const html5Qrcode = new Html5Qrcode('reader')
-    html5Qrcode.start({ facingMode: 'environment' } , { aspectRatio: 1 }, (text) => {
-       
-      })
+    <script>
+      const html5Qrcode = new Html5Qrcode("reader");
+      html5Qrcode.start(
+        { facingMode: "environment" },
+        { aspectRatio: 1 },
+        (text) => {}
+      );
     </script>
-<style>
-    #main{  margin: 20px auto;display: grid; height: 500px;
-  width: 500px;}
-    </style>
-</body>
-
+  </body>
 </html>
