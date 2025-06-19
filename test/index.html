@@ -31,7 +31,7 @@
       const html5Qrcode = new Html5Qrcode("reader");
       html5Qrcode.start(
         { facingMode: "environment" },
-        { qrbox:{width:300,height: 300} },
+        { videoConstraints:{aspectRatio:1} },
         (text) => {}
       );
     </script>
